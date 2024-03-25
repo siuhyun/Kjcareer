@@ -386,8 +386,6 @@ main .business4 {
 main .business4 .content_txt1 span, main .business4 .content_txt1 strong {
     color: inherit;
 }
-main .business5 {}
-main .business5 .inner{}
 main .business5 .content_box{
     display: flex; padding-left: 0;margin-top:60px;
 }
@@ -572,7 +570,6 @@ main .business6 .center_map_box {
 main .business6 .center_map_box p {
     line-height: 1.5em; font-size: 20px; 
 }
-main .business6 .center_map_box .text_box {}
 main .business6 .center_map_box .text_box strong {font-size: 34px; font-weight: 800;}
 main .business6 .center_map_box .text_box .break {
     display: block; line-height: 1.5em;
@@ -607,9 +604,6 @@ main .business4 .btns .btn_bg2 {
 
 /****************미디어쿼리********************/
 @media screen and (min-width:1540px) {
-    main .business1::before,main .business1::after {
-        
-    }
 }
 @media screen and (min-width:1280px) { /*PC*/
     
@@ -619,7 +613,7 @@ main .business4 .btns .btn_bg2 {
     }
     main .section .content_txt1 {margin: 50px 0 95px 0;}
     main .section .content_txt1 span {font-size: 24px; }
-    main .section .content_txt1 strong{font-size: 60px; margin: 20px 0 35px;}
+    main .section .content_txt1 strong{font-size: 58px; margin: 20px 0 35px;}
     main .section .content_txt3 strong {font-size: 54px; margin: 30px 0; }
     main .section .content_slide .card_name {
         height: 53px;line-height: 30px;
@@ -755,7 +749,6 @@ main .business4 .btns .btn_bg2 {
         left: auto; right: -160px; bottom: -100px;
         background-size: cover;
     }
-    main .business2 {}
     main .business2 .inner {
         background-position: right 0 top 70px;
     }
