@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습 및 테스트</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+                let color = ['red', 'orange', 'blue', 'violet']
+                $('.ex1 .tabs li').click(function() {
+                let i = $(this).index()//alert(i); 0~3
+
+                $('.ex1 .tabs li').not(this).removeClass()
+                $(this).addClass(color[i])
+                
+                $('.content_box>div').removeClass(color[i])
+                $('.content_box>div').eq(i).addClass(color[i])
+
+                $('.content_box>div').hide()
+                $('.content_box>div').eq(i).show()
+                })  
+            })
+
+    </script>
+
+    <style>
+        body{background: #dedede;}
+        .ex1 {
+            width: 1200px; margin: 100px auto; padding: 50px;
+            background: #fff; 
+        }
+        .ex1 .tabs {
+            display: flex; gap: 10px; margin-bottom: 20px;
+        }
+        .ex1 .tabs li{
+            padding: 15px 30px; border-radius: 30px;
+            background: #000; color: #fff;
+            cursor: pointer; user-select: none;
+        }
+        .ex1 .content_box {position: relative; height: 300px;}
+        .ex1 .content_box>div{
+            position: absolute; left: 0; right: 0; top: 0; 
+            display: none;min-height: 200px;
+            border: 1px solid #aaa;
+        }
+        .ex1 .content_box .content1 {
+            display: block;
+        }
+        .red {background: red !important;}
+        .orange {background: orange !important;}
+        .blue {background: blue !important;}
+        .violet {background: violet !important;}
+    </style>
+</head>
+<body>
+    <div class="ex1">
+        <div class="tabmenu_wrap">
+            <ul class="tabs">
+                <li class="red">Red</li>
+                <li class="orange">Orange</li>
+                <li class="blue">Blue</li>
+                <li class="violet">Violet</li>
+            </ul>
+            <div class="content_box">
+                <div class="content1">
+                    <ul>
+                        <li>list-1</li>
+                        <li>list-2</li>
+                        <li>list-3</li>
+                        <li>list-4</li>
+                        <li>list-5</li>
+                        <li>list-6</li>
+                    </ul>
+                </div>
+                <div class="content2">
+                    <img src="/img/main_sec03.png" alt="">
+                </div>
+                <div class="content3">
+                    <p>단락</p>
+                </div>
+                <div class="content4">
+                    컨텐츠의 형태와 상관없이 탭에 대응하는 컨텐츠 박스를 만들자~!
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
