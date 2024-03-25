@@ -625,7 +625,7 @@ main .business4 .btns .btn_bg2 {
     }
     main .business1 .content_box::after {
         width: 900px;height: 100vh;
-        left: -50px;bottom: -100px;
+        left: -50px;bottom: -180px;
     }
     main .business2 .inner{
         background-position: left 0 bottom 50px;
